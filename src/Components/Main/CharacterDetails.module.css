@@ -1,0 +1,73 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  /* padding: 3rem; */
+}
+
+.character-image {
+  user-select: none;
+  clip-path: polygon(10% 0, 0 10%, 0 100%, 90% 100%, 100% 90%, 100% 0);
+  animation: 0.75s ease-out 0s 1 slideInFromRight;
+  /* overflow: hidden; */
+}
+
+.character-image img {
+  width: 445px;
+  height: 678px;
+  user-select: none;
+}
+
+.character-info {
+  height: 70vh;
+  min-width: 50vw;
+  animation: 0.75s ease-out 0s 1 fallInFade;
+}
+
+.character-info p {
+  text-indent: 40px;
+}
+
+.character-image,
+.character-info {
+  margin: 2rem;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fallInFade {
+  0% {
+    transform: translateY(-5%);
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

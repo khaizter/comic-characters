@@ -1,0 +1,23 @@
+.character__card {
+  margin: 1rem;
+  width: 11rem;
+  background: black;
+  height: 250px;
+  border-radius: 5px;
+  /* transition: transform 500ms ease-out; */
+  cursor: pointer;
+}
+
+/* .character__card:hover {
+  transform: scale(1.1);
+} */
+
+.character__image {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+
+.character__alias {
+  text-align: center;
+}

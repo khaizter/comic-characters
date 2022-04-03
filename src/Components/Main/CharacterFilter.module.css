@@ -1,0 +1,8 @@
+.character-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.character-filter__factions {
+  display: inline-block;
+}
